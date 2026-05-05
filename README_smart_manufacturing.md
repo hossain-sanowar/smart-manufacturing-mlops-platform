@@ -112,4 +112,9 @@ kubectl apply -f deploy/k8s/
 ---
 
 ## 👨‍💻 Author
+
 Md Sanowar Hossain
+Machine Learning Engineer | Applied AI
+
+GitHub: https://github.com/hossain-sanowar
+LinkedIn: https://www.linkedin.com/in/HossainSanowar
