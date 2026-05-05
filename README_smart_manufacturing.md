@@ -49,9 +49,10 @@ This project demonstrates an end-to-end ML system:
 
 ---
 
-## 🔄 Workflow
-![Workflow](docs/smart_manufacturing_mlops_workflow.png)
+## 🔄 End‑to‑End Workflow
+Data Processing & Model Training → Flask API → Docker → GitHub → Jenkins CI → ArgoCD CD → Kubernetes (GCP VM)
 
+![Workflow](docs/smart_manufacturing_mlops_workflow.png)
 ---
 
 ## ⚙️ Setup
@@ -118,3 +119,8 @@ Machine Learning Engineer | Applied AI
 
 GitHub: https://github.com/hossain-sanowar
 LinkedIn: https://www.linkedin.com/in/HossainSanowar
+
+---
+## 🏷️ License
+This project is open‑source under the MIT License.
+Feel free to use, modify, and contribute.
