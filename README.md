@@ -1,87 +1,126 @@
-# smart-manufacturing-mlops-platform
+# 🚀 Smart Manufacturing MLOps Platform
 
+A production-grade MLOps + GitOps platform for smart manufacturing use cases.
 
 ---
 
-# `Smart-manufacturing-mlops-platform`
+## 📌 Project Overview
+This project demonstrates an end-to-end ML system:
+- ML lifecycle (EDA → Training → Deployment)
+- CI/CD with Jenkins
+- GitOps with ArgoCD
+- Docker + Kubernetes deployment
+- GCP VM infrastructure
 
-## Suggested Folder Structure
-```text
-smart-manufacturing-mlops-platform/
-├── README.md
-├── requirements.txt
-├── Dockerfile
-├── .gitignore
-├── app/
-│   ├── main.py
-│   ├── model/
-│   │   ├── train.py
-│   │   ├── predict.py
-│   │   └── evaluate.py
-│   └── utils/
-│       └── config.py
-├── deploy/
-│   ├── k8s/
-│   │   ├── deployment.yaml
-│   │   └── service.yaml
-│   └── argocd/
-│       └── application.yaml
-├── jenkins/
-│   └── Jenkinsfile
-├── tests/
-│   └── test_api.py
-└── docs/
-    └── architecture.png
-```
-# Smart Manufacturing MLOps Platform
+---
 
-A GitOps-based ML deployment platform for manufacturing use cases using ArgoCD, Jenkins, Docker, and Kubernetes.
+## 🧠 Key Highlights
+- End-to-end ML pipeline
+- Flask API deployment
+- Dockerized service
+- Kubernetes orchestration
+- Jenkins CI with GitHub Webhooks
+- ArgoCD CD pipeline
 
-## Overview
-This project demonstrates how to deploy and manage machine learning services in a manufacturing-oriented environment using GitOps practices and automated CI/CD workflows.
+---
 
-## Features
-- GitOps-based deployment with ArgoCD
-- CI/CD automation with Jenkins
-- Dockerized ML service
-- Kubernetes deployment manifests
-- Production-style release workflow
-- Model service integration through API endpoints
+## 🧰 Tech Stack
 
-## Tech Stack
-- Python
+### ML
+- Python, Jupyter, Scikit-learn
+
+### App
+- Flask API
+- HTML, CSS
+
+### DevOps
 - Docker
 - Kubernetes
-- ArgoCD
 - Jenkins
-- FastAPI or Flask
+- ArgoCD
 
-## Project Structure
-- `app/` ML service and API
-- `deploy/k8s/` Kubernetes manifests
-- `deploy/argocd/` ArgoCD application config
-- `jenkins/` CI/CD pipeline definition
-- `tests/` deployment and API tests
+### Cloud
+- GCP VM
 
-## Run Locally
-```bash
+---
+
+## 🖼️ Tools Overview
+![Tools](docs/smart_manufacturing_mlops_tools.png)
+
+---
+
+## 🔄 End‑to‑End Workflow
+Data Processing & Model Training → Flask API → Docker → GitHub → Jenkins CI → ArgoCD CD → Kubernetes (GCP VM)
+
+![Workflow](docs/smart_manufacturing_mlops_workflow.png)
+---
+
+## ⚙️ Setup
+
+### Clone
+```
 git clone https://github.com/hossain-sanowar/smart-manufacturing-mlops-platform
 cd smart-manufacturing-mlops-platform
+```
+
+### Virtual Env
+```
+python -m venv venv
+venv\Scripts\activate
+```
+
+### Install
+```
 pip install -r requirements.txt
+```
+
+### Run
+```
 python app/main.py
 ```
-## Deployment
 
-This project uses:
+---
 
-Jenkins for build and CI
-Docker for packaging
-Kubernetes for deployment
-ArgoCD for GitOps-based release management
-Use Case
+## 🐳 Docker
+```
+docker build -t smart-ml-app .
+docker run -p 5000:5000 smart-ml-app
+```
 
-Built as a reference implementation for reliable ML deployment workflows in manufacturing-oriented systems.
+---
 
-## Author
+## ⚙️ CI/CD Flow
+1. Push code → GitHub
+2. Webhook → Jenkins
+3. Build + Test
+4. Deploy via ArgoCD
+5. Run on Kubernetes
+
+---
+
+## ☁️ Kubernetes
+```
+kubectl apply -f deploy/k8s/
+```
+
+---
+
+## 🎯 Use Case
+- Machine efficiency prediction
+- Predictive maintenance
+- Smart manufacturing optimization
+
+---
+
+## 👨‍💻 Author
 
 Md Sanowar Hossain
+Machine Learning Engineer | Applied AI
+
+GitHub: https://github.com/hossain-sanowar
+LinkedIn: https://www.linkedin.com/in/HossainSanowar
+
+---
+## 🏷️ License
+This project is open‑source under the MIT License.
+Feel free to use, modify, and contribute.
